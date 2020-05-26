@@ -1,13 +1,10 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import App from "next/app";
-import Router from "next/router";
 
 export function redirectUser(ctx, location) {
-  if (ctx.res) {
+  if (ctx.res && typeof ctx.res.writeHead === "function") {
     ctx.res.writeHead(302, { Location: location });
     ctx.res.end();
-  } else {
-    Router.push(location);
   }
 }
 export default class MyApp extends App {
