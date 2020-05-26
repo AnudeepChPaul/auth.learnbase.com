@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import App from "next/app";
+import './_app.scss'
 
 export function redirectUser(ctx, location) {
   if (ctx.res && typeof ctx.res.writeHead === "function") {
