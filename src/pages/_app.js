@@ -3,7 +3,7 @@ import App from "next/app";
 import Router from "next/router";
 
 export function redirectUser(ctx, location) {
-  if (ctx.req) {
+  if (ctx.res) {
     ctx.res.writeHead(302, { Location: location });
     ctx.res.end();
   } else {
