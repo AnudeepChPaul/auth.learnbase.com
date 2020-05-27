@@ -1,14 +1,14 @@
 // const assetPrefix = prod ? "/login" : "";
 
-const prod = process.env.NODE_ENV === 'production'
+const prod = process.env.NODE_ENV === "production";
 
 module.exports = {
-  assetPrefix: prod ? `${process.env.AUTH_PAGE_URL}/auth` : "",
+  assetPrefix: prod ? `` : "",
   publicRuntimeConfig: {
-    staticFolder: prod ? "/auth" : "",
+    staticFolder: prod ? "" : "",
   },
   env: {
-    staticFolder: prod ? "/auth" : "",
+    staticFolder: prod ? "" : "",
   },
   exportPathMap: async function (
     defaultPathMap,
