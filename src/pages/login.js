@@ -51,7 +51,6 @@ class Login extends React.Component {
   render() {
     return (
       <Container>
-        <div>{process.env.staticFolder}</div>
         <Jumbotron className="mt-4 mb-2">
           {this.state.status === Login.loginStatus.LOGIN_FAILED && (
             <Alert variant="danger"> Invalid Username or Password </Alert>
