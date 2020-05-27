@@ -3,6 +3,7 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"],
+      "@core": ["src/../../core.learnbase.com"],
       "@components/*": ["src/components/*"],
       "@api/*": ["src/api/*"],
       "@layouts/*": ["src/layouts/*"]

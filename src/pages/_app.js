@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import App from "next/app";
-import './_app.scss'
+import "./_app.scss";
+import MainLayout from '@/layouts/Main/MainLayout'
 
 export function redirectUser(ctx, location) {
   if (ctx.res && typeof ctx.res.writeHead === "function") {
@@ -28,9 +29,9 @@ export default class MyApp extends App {
     const { Component, pageProps } = this.props;
 
     return (
-      // <MainLayout {...pageProps.appProps}>
-      <Component {...pageProps}></Component>
-      // </MainLayout>
+      <MainLayout {...{title: "Login to learnbase"}}>
+        <Component {...pageProps}></Component>
+      </MainLayout>
     );
   }
 }
