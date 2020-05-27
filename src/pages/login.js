@@ -8,6 +8,7 @@ import Alert from "react-bootstrap/Alert";
 import Spinner from "react-bootstrap/Spinner";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import CORE from 'core.learnbase.com'
+// import { loadEnvConfig } from "next/dist/lib/load-env-config";
 
 class Login extends React.Component {
   constructor(props) {
@@ -50,6 +51,7 @@ class Login extends React.Component {
   render() {
     return (
       <Container>
+        <div>{process.env.staticFolder}</div>
         <Jumbotron className="mt-4 mb-2">
           {this.state.status === Login.loginStatus.LOGIN_FAILED && (
             <Alert variant="danger"> Invalid Username or Password </Alert>
