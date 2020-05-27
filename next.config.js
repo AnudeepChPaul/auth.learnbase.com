@@ -15,8 +15,8 @@ module.exports = {
     { dev, dir, outDir, distDir, buildId }
   ) {
     return {
-      "/_next": { page: prod ? "/auth/_next" : "/" },
-      "/_next/**": { page: prod ? "/auth/_next/**" : "/" },
+      "/_next": { page: prod ? "/_next" : "/" },
+      "/_next/**": { page: prod ? "/_next/**" : "/" },
     };
   },
 };
