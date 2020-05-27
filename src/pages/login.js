@@ -7,7 +7,7 @@ import Button from "react-bootstrap/Button";
 import Alert from "react-bootstrap/Alert";
 import Spinner from "react-bootstrap/Spinner";
 import Jumbotron from "react-bootstrap/Jumbotron";
-import CORE from "@core"
+import CORE from 'core.learnbase.com'
 
 class Login extends React.Component {
   constructor(props) {
